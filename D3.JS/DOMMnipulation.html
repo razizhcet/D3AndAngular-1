@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Error: This is dummy error.</p>
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <label>D3</label><input type="checkbox" />
+        <label>jQuery</label><input type="checkbox" />
+    </div>
+
+    <script>
+        //d3.select("body").append("p").text("Third paragraph.");
+        //d3.select("div").insert("p").text("Third paragraph.");
+        //d3.select("p").remove();
+        //d3.select("p").html("<span>This was added in HTML</span>");
+        //d3.select("p").attr("class", "error");
+        d3.select("input").property("checked", true);
+    </script>
+</body>
+</html>
